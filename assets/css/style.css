@@ -146,7 +146,7 @@ input[type=submit]:hover {
 .item {
   overflow: auto;
   float: left;
-  margin: 20px;
+  margin: 0 30px 30px 0;
 }
 
 .item-name {
@@ -177,9 +177,6 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 980px) {
-  .nav-bar {
-    width: 100%;
-  }
   .main-content {
     width: 95%;
   }
@@ -191,8 +188,11 @@ input[type=submit]:hover {
   }
 }
 
+@media screen and (max-width: 760px) {
+
+}
+
 @media screen and (max-width: 640px) {
-  
   .nav-bar {
     width: 100%;
   }
@@ -202,8 +202,25 @@ input[type=submit]:hover {
   h1 {
     width: 100%;
   }
-  p { 
+  p {
     clear: both;
+  }
+  #bio-image {
+    width: 100%;
+  }
+  .item {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+    }
+  ul#horizontal-list li {
+    display: inline;
   }
 }
 
